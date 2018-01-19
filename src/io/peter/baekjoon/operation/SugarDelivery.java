@@ -36,26 +36,40 @@ import java.util.Scanner;
 
 public class SugarDelivery {
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		int N = input.nextInt();
+//		Scanner input = new Scanner(System.in);
+//		int N = input.nextInt();
+//		
+//		ArrayList<Integer> y_List = new ArrayList<>();
+//		
+//		for(int y = 0 ; 5*y <= N ; y++){
+//			if((N - 5*y) % 3 == 0){
+//				y_List.add(y);
+//			}
+//		}
+//		
+//		if(y_List.size() == 0){
+//			System.out.println(-1);
+//			
+//		} else {
+//			int y = y_List.get(y_List.size()-1);
+//			int x = (N-5*y) / 3 ;
+//			System.out.println(x+y);
+//		}
+//		
+//		input.close();
+		sol2();
+	}
+	
+	public static void sol2(){
+		int N = new Scanner(System.in).nextInt();
 		
-		ArrayList<Integer> y_List = new ArrayList<>();
-		
-		for(int y = 0 ; 5*y <= N ; y++){
+		for(int y = N/5 ; y >= 0 ; y--){
 			if((N - 5*y) % 3 == 0){
-				y_List.add(y);
+				System.out.println((N - 2*y) / 3);
+				return;
 			}
 		}
 		
-		if(y_List.size() == 0){
-			System.out.println(-1);
-			
-		} else {
-			int y = y_List.get(y_List.size()-1);
-			int x = (N-5*y) / 3 ;
-			System.out.println(x+y);
-		}
-		
-		input.close();
+		System.out.println(-1);
 	}
 }
