@@ -10,9 +10,9 @@ public class Star2 {
 		
 		for(int i=0 ; i<N ; i++){
 			// i+1번째 줄
-			for(int j=0 ; j<N-i ; j++)
+			for(int j=0 ; j<N-i-1 ; j++)
 				System.out.print(" ");
-			for(int k=0 ; k<i ;k++)
+			for(int k=0 ; k<i+1 ;k++)
 				System.out.print("*");
 			System.out.println();
 		}
