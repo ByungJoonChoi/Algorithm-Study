@@ -1,4 +1,4 @@
-package io.peter.fibonacci;
+package io.peter.baekjoon.fibonacci;
 
 import java.io.BufferedReader;
 import java.io.IOException;

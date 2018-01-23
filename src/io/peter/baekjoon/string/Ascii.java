@@ -1,4 +1,4 @@
-package io.peter.string;
+package io.peter.baekjoon.string;
 
 import java.io.BufferedReader;
 import java.io.IOException;

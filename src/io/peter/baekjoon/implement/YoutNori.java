@@ -1,4 +1,4 @@
-package io.peter.implement;
+package io.peter.baekjoon.implement;
 
 import java.io.BufferedReader;
 import java.io.IOException;
